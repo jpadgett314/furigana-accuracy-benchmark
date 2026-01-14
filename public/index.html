@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Furigana Accuracy Benchmark</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "apexcharts": "https://cdn.jsdelivr.net/npm/apexcharts@3.41.0/dist/apexcharts.esm.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Furigana Accuracy Benchmark</h1>
+      <div id="chart"></div>
+    </main>
+    <script type="module">
+      import ApexCharts from 'apexcharts';
+      import results from './benchmark-results.json' with { type: 'json' };
+      
+      const options = {
+        chart: { type: 'bar' },
+        title: { text: 'Accuracy (%) by Category and Analyzer' },
+        series: results
+      };
+
+      const chart = new ApexCharts(document.querySelector('#chart'), options);
+
+      chart.render();
+    </script>
+  </body>
+</html>

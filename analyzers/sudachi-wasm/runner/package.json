@@ -1,0 +1,11 @@
+{
+  "name": "sudachi-wasm-runner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js ../../../challenge-sentences.json ../output.json"
+  },
+  "dependencies": {
+    "sudachi": "^0.1.5"
+  }
+}

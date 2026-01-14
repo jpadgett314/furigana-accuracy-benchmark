@@ -1,0 +1,28 @@
+[
+  {
+    "name": "demo",
+    "data": [
+      {
+        "x": "spacy",
+        "y": 100
+      },
+      {
+        "x": "sudachi",
+        "y": 100
+      }
+    ]
+  },
+  {
+    "name": "another",
+    "data": [
+      {
+        "x": "spacy",
+        "y": 100
+      },
+      {
+        "x": "sudachi",
+        "y": 100
+      }
+    ]
+  }
+]
