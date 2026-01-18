@@ -65,7 +65,9 @@ export class GradeRegistry {
       yomiExpected = toHiragana(yomiExpected || "");
       yomiActual = toHiragana(yomiActual || "");
 
-      const isCorrect = yomiExpected === yomiActual;
+      // Analyzer segmentation isn't graded. Corresponding token(s) must
+      // contain reading.
+      const isCorrect = yomiActual.includes(yomiExpected);
 
       for (const tag of tags) {
         this.#results.push({ tag, analyzer, isCorrect });
