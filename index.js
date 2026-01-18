@@ -106,12 +106,20 @@ function main() {
   const exercises = JSON.parse(fs.readFileSync('challenge-sentences.json', 'utf8'));
   const analyzers = [
     {
+      name: 'fugashi',
+      data: './analyzers/fugashi/output.json'
+    },
+    {
       name: 'spacy',
       data: './analyzers/spacy\[ja\]/output.json'
     },
     {
       name: 'sudachi',
       data: './analyzers/sudachi-wasm/output.json'
+    },
+    {
+      name: 'yomikata',
+      data: './analyzers/yomikata/output.json'
     }
   ];
 

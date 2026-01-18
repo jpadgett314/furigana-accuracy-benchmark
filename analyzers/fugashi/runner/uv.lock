@@ -1,0 +1,38 @@
+version = 1
+revision = 3
+requires-python = "==3.10.*"
+
+[[package]]
+name = "fugashi"
+version = "1.5.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ee/ec/b2e5aeba9438551ee4ae5275e95da506a279f53432e618daa1d4bd14c7d5/fugashi-1.5.2.tar.gz", hash = "sha256:a7959eab95bb37a6a934fc2314d3ff888664d11b88d0e1c596260a5785d5880e", size = 339768, upload-time = "2025-10-24T07:24:27.581Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/49/3e8e1cbdd83f9977fa92fe3186fc779fdcfba856d523f82ea913e270dc5f/fugashi-1.5.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:952533caa1704720989ee7f4262902219f938eac87a003d72b8a98b2a24b0299", size = 512603, upload-time = "2025-10-24T07:27:01.166Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/32/6c758cd13fb581228f17d79535c74a2470c750ede99b999a6180e236744a/fugashi-1.5.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:5b65bdf535d6a58cbea2938dd2de7daf001c38f8821f28006b695d3ac892f521", size = 456837, upload-time = "2025-10-24T07:27:02.616Z" },
+    { url = "https://files.pythonhosted.org/packages/df/b7/027bf15c5132644487f178c39a5b5a6f26209e4315a4f12bb356ffe3efb7/fugashi-1.5.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:380e5ebe058e4243e5662b252b008782f20818c5d2d30d0e482a8911e2e68674", size = 453989, upload-time = "2025-10-24T07:27:03.64Z" },
+    { url = "https://files.pythonhosted.org/packages/76/ed/c7dd73e6db1cd6c966a8598f1136290534f6cfcbe907b64614285a21d96c/fugashi-1.5.2-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:809db19725a623b5f3f47c7c11909143bb14781569caa3211e6c813608a9a213", size = 664923, upload-time = "2025-10-24T07:48:50.521Z" },
+    { url = "https://files.pythonhosted.org/packages/ed/7e/c872bc8277d5ccd66d0770f5e43c70e800ae6735dd22c8099dbeb74135ec/fugashi-1.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:6464f747c38a1043c9a2da81975db8f2c9724ef59389754d8dae7328ed60a698", size = 677082, upload-time = "2025-10-24T07:25:36.427Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/1e/209e5ca79a393a5e5aff0161b56f3a0398457bf756ba6e1f67ea96b5e942/fugashi-1.5.2-cp310-cp310-win_amd64.whl", hash = "sha256:894b69898b83c6d96f73134466df68682cba10d867c1ca55a93585a7d2213133", size = 508994, upload-time = "2025-10-24T07:24:28.029Z" },
+]
+
+[[package]]
+name = "fugashi-runner"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "fugashi" },
+    { name = "unidic-lite" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fugashi", specifier = ">=1.5.2" },
+    { name = "unidic-lite", specifier = ">=1.0.8" },
+]
+
+[[package]]
+name = "unidic-lite"
+version = "1.0.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/55/2b/8cf7514cb57d028abcef625afa847d60ff1ffbf0049c36b78faa7c35046f/unidic-lite-1.0.8.tar.gz", hash = "sha256:db9d4572d9fdd4d00a97949d4b0741ec480ee05a7e7e2e32f547500dae27b245", size = 47356746, upload-time = "2021-01-25T06:07:54.719Z" }
