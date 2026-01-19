@@ -37,7 +37,7 @@ export class GradableBuilder {
         {
           analyzer,
           text: segment.text,
-          tags: segment.tags || [],
+          tags: ['overall', ...(segment.tags || [])],
           yomiExpected: segment.yomi,
           yomiActual: matchedTokens.map((t) => t.yomi).join(""),
         }
@@ -132,7 +132,8 @@ function main() {
   }
 
   const grader = new GradeRegistry();
-  grader.grade(ingester.getGradables());
+  const gradables = ingester.getGradables();
+  grader.grade(gradables);
   const report = grader.toApexChartsFormat();
 
   fs.writeFileSync('./public/benchmark-results.json', JSON.stringify(report, null, 2));
