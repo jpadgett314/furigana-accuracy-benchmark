@@ -57,11 +57,31 @@ def merge_readings(dict_text: str, bert_text: str) -> list[Token]:
 
     return merged
 
-def analyze(text: str):
-    dict_furi = dict_reader.furigana(text)
-    bert_furi = bert_reader.furigana(text)
+def katakana_to_hiragana(text: str) -> str:
+    result = []
 
-    return merge_readings(dict_furi, bert_furi)
+    for ch in text:
+        code = ord(ch)
+        # Katakana block (including small kana)
+        if 0x30A1 <= code <= 0x30F6:
+            result.append(chr(code - 0x60))
+        else:
+            result.append(ch)
+
+    return "".join(result)
+
+def analyze(text: str) -> list[Token]:
+    text = katakana_to_hiragana(text)
+
+    try: 
+        dict_furi = dict_reader.furigana(text)
+        bert_furi = bert_reader.furigana(text)
+
+        return merge_readings(dict_furi, bert_furi)
+    except AssertionError:
+        # Various special characters are not handled gracefully, including
+        # katakana.
+        return []
 
 def read_input(input_file):
     with open(input_file, "r", encoding="utf-8") as f:
