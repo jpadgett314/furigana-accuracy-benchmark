@@ -64,11 +64,11 @@
         "segments": [
             "春の陽気に包まれた公園内は、花の",
             {
-                "text": "盛り",
-                "yomi": "さかり",
+                "text": "盛",
+                "yomi": "さか",
                 "tags": []
             },
-            "を迎えていた。"
+            "りを迎えていた。"
         ]
     },
     {
@@ -76,11 +76,65 @@
         "segments": [
             "菓子",
             {
-                "text": "盛り",
-                "yomi": "もり",
+                "text": "盛",
+                "yomi": "も",
                 "tags": []
             },
-            "を移動しても、皿を置く隙間はない。"
+            "りを移動しても、皿を置く隙間はない。"
+        ]
+    },
+    {
+        "source": "tatoeba.org",
+        "segments": [
+            "放課後は",
+            {
+                "text": "空",
+                "yomi": "あ",
+                "tags": []
+            },
+            "いてますか？"
+        ]
+    },
+    {
+        "source": "https://www.tufs.ac.jp/ts/personal/SUZUKI_Tomomi/jreibun/index-jreibun.html",
+        "segments": [
+            "週末の朝、お腹が",
+            {
+                "text": "空",
+                "yomi": "す",
+                "tags": []
+            },
+            "いて冷蔵庫を開けたが、中には食べ物らしい食べ物はほとんど何もなかった。"
+        ]
+    },
+    {
+        "source": "tatoeba.org",
+        "segments": [
+            "探検家が山中の道なき道を",
+            {
+                "text": "行",
+                "yomi": "い",
+                "tags": []
+            },
+            "った。"
+        ]
+    },
+    {
+        "source": "tatoeba.org",
+        "segments": [
+            "ホワイトニングなどの治療を行います。ヤニ取りなどのクリーニングも",
+            {
+                "text": "行",
+                "yomi": "おこな",
+                "tags": []
+            },
+            "っています。"
+        ]
+    },
+    {
+        "source": "",
+        "segments": [
+            "ダンジョンに落ちて19日目が終わろうとしていた。"
         ]
     }
 ]
