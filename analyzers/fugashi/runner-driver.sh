@@ -1,3 +1,3 @@
 #!/bin/sh
 cd runner
-uv run ./main.py ../../../challenge-sentences.json ../output.json
+uv run --frozen ./main.py ../../../challenge-sentences.json ../output.json
