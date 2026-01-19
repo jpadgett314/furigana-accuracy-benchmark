@@ -1,43 +1,22 @@
 [
   {
-    "name": "demo",
+    "name": "overall",
     "data": [
       {
         "x": "fugashi",
-        "y": 100
+        "y": 33
       },
       {
         "x": "spacy",
-        "y": 100
+        "y": 33
       },
       {
         "x": "sudachi",
-        "y": 100
+        "y": 33
       },
       {
         "x": "yomikata",
-        "y": 100
-      }
-    ]
-  },
-  {
-    "name": "another",
-    "data": [
-      {
-        "x": "fugashi",
-        "y": 100
-      },
-      {
-        "x": "spacy",
-        "y": 100
-      },
-      {
-        "x": "sudachi",
-        "y": 100
-      },
-      {
-        "x": "yomikata",
-        "y": 100
+        "y": 50
       }
     ]
   }
